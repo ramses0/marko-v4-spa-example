@@ -1,21 +1,19 @@
-module.exports = {
-  '': ''
-
-  ,onInput( input, output ) {
+module.exports = class {
+  onInput( input, output ) {
     this.state = {
       hello: input.hello || "world"
     }
   }
 
-  ,onMount() {
+  onMount() {
     console.log( "MOUNTED! blue button" );
   }
 
-  ,onClick( a ) {
+  onClick( a ) {
     console.log( "blue button clicker - " + this.state.hello + '... ' + a);
   }
 
-  ,otherFunction() {
+  otherFunction() {
     console.log( "DEF" );
   }
 };
