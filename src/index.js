@@ -19,6 +19,9 @@ if ( location.href.match( /first/ ) ) {
 else if ( location.href.match( /second/ ) ) {
   page = require('./pages/second/template.marko');
 }
+else if ( location.href.match( /masked/ ) ) {
+  page = require('./pages/masked/template.marko');
+}
 
 // prove marko-v4 can render at all
 document.addEventListener("DOMContentLoaded", (event) => {

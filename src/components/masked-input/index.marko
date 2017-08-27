@@ -1,0 +1,20 @@
+<div>
+  <div>
+    State: ${ state.editing }
+  </div>
+  <if( state.editing )>
+    Editing: <input type="text"
+     key="abc"
+     value="${ state.typed }"
+     on-input('handleInput')
+     on-blur('handleBlur')
+    >
+  </if>
+  <else>
+    Showing: <input type="text"
+     key="def"
+     value="${ state.display }"
+     on-focus('handleFocus')
+    >
+  </else>
+</div>
